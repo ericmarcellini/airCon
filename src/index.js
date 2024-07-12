@@ -3,10 +3,21 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => (
-  <div className='container'>
-    <h1 className='text-center mt-5'>Hello, React!</h1>
-    <button className='btn btn-primary'>Click me!</button>
-  </div>
+    <>
+        <Navbar className="bg-body-tertiary">
+            <Container>
+                <Navbar.Brand href="#home">
+                    <img
+                        src="/logo.svg"
+                        width="30"
+                        height="30"
+                        className="d-inline-block align-top"
+                        alt="React Bootstrap logo"
+                    />
+                </Navbar.Brand>
+            </Container>
+        </Navbar>
+    </>
 );
 
 export default App;
