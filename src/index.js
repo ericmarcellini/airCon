@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => (
-  <div>
-    <h1>Hello, React!</h1>
+  <div className='container'>
+    <h1 className='text-center mt-5'>Hello, React!</h1>
+    <button className='btn btn-primary'>Click me!</button>
   </div>
 );
 
-ReactDOM.render(<App />, document.getElementById('root'));
+export default App;
