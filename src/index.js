@@ -1,23 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+
+
+// Import Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const App = () => (
-    <>
-        <Navbar className="bg-body-tertiary">
-            <Container>
-                <Navbar.Brand href="#home">
-                    <img
-                        src="/logo.svg"
-                        width="30"
-                        height="30"
-                        className="d-inline-block align-top"
-                        alt="React Bootstrap logo"
-                    />
-                </Navbar.Brand>
-            </Container>
-        </Navbar>
-    </>
+// Render the main App component into the root element
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
-
-export default App;

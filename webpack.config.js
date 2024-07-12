@@ -23,11 +23,11 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    extensions: ['.*', '.js', '.jsx']
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: '.public/index.html'
     })
   ],
   devServer: {
