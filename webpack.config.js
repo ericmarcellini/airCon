@@ -19,15 +19,32 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(png|jpg|gif|webp)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images/',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.html$/,
+        use: ['html-loader']
       }
     ]
   },
   resolve: {
-    extensions: ['.*', '.js', '.jsx']
+    extensions: ['*', '.js', '.jsx']
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/index.html'
+      template: './public/index.html',
+      filename: 'index.html'
     })
   ],
   devServer: {

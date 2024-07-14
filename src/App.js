@@ -5,8 +5,8 @@ import MyCard from './components/Card.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
 import { ListGroup } from 'react-bootstrap';
-import placeholder1 from './images/placeholder1.webp';
-// import './App.css';
+import placeHolderImage from './images/placeholder1.png';
+import './App.css';
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
       </div>
       <div className='Welcome'>
         <div className='Left-Side'>
-          <img src="images/placeholder.webp"></img>
+          <img src={placeHolderImage} alt ="Placeholder" className='Placeholder'></img>
         </div>
         <div className='Right-Side'>
           <p> 
